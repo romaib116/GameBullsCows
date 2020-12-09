@@ -35,7 +35,24 @@ namespace Day2_HW
         {
             int[] ComputerPuzzle = new int[4]; //Init array
             Random random = new Random(); //Init random
-            for (int i = 0; i < ComputerPuzzle.Length; ComputerPuzzle[i] = random.Next(9), Console.WriteLine(ComputerPuzzle[i]), i++); //Fill rand
+            for (int i = 0; i < ComputerPuzzle.Length; i++) //Generate unique array
+            {
+                bool MatchesCheck = true; //Checker
+                while (MatchesCheck) //While have matches generate new random number
+                {
+                    ComputerPuzzle[i] = random.Next(1, 9); 
+                    var counter = 0; //Count of matches
+                    for (int j = 0; j < ComputerPuzzle.Length; j++) //Check for matches
+                    {
+                        if (ComputerPuzzle[i]==ComputerPuzzle[j])
+                        {
+                            counter++;
+                        }
+                    }
+                    MatchesCheck = counter > 1 ? true : false; //If have matches go generate new number
+                }
+                Console.WriteLine(ComputerPuzzle[i]);
+            }
             bool WinMarker = false; 
             while (!WinMarker) //While dont win
             {
