@@ -1,0 +1,13 @@
+C:\Users\Roman\source\repos\Day2_HW\bin\Debug\netcoreapp3.1\Day2_HW.exe
+C:\Users\Roman\source\repos\Day2_HW\bin\Debug\netcoreapp3.1\Day2_HW.deps.json
+C:\Users\Roman\source\repos\Day2_HW\bin\Debug\netcoreapp3.1\Day2_HW.runtimeconfig.json
+C:\Users\Roman\source\repos\Day2_HW\bin\Debug\netcoreapp3.1\Day2_HW.runtimeconfig.dev.json
+C:\Users\Roman\source\repos\Day2_HW\bin\Debug\netcoreapp3.1\Day2_HW.dll
+C:\Users\Roman\source\repos\Day2_HW\bin\Debug\netcoreapp3.1\Day2_HW.pdb
+C:\Users\Roman\source\repos\Day2_HW\obj\Debug\netcoreapp3.1\Day2_HW.csprojAssemblyReference.cache
+C:\Users\Roman\source\repos\Day2_HW\obj\Debug\netcoreapp3.1\Day2_HW.AssemblyInfoInputs.cache
+C:\Users\Roman\source\repos\Day2_HW\obj\Debug\netcoreapp3.1\Day2_HW.AssemblyInfo.cs
+C:\Users\Roman\source\repos\Day2_HW\obj\Debug\netcoreapp3.1\Day2_HW.csproj.CoreCompileInputs.cache
+C:\Users\Roman\source\repos\Day2_HW\obj\Debug\netcoreapp3.1\Day2_HW.dll
+C:\Users\Roman\source\repos\Day2_HW\obj\Debug\netcoreapp3.1\Day2_HW.pdb
+C:\Users\Roman\source\repos\Day2_HW\obj\Debug\netcoreapp3.1\Day2_HW.genruntimeconfig.cache
