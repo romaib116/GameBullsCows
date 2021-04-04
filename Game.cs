@@ -1,27 +1,30 @@
 ﻿using System;
-using System.Linq;
 
-
-namespace Day2_HW
+namespace BullsCows
 {
-    class Game
+    /// <summary>
+    /// BullsCowsGame
+    /// </summary>
+    public class Game
     {
         static int[] PlayerInput()
         {
             Console.WriteLine("Please, input your solver - ");
-            string tempInput = Console.ReadLine(); 
-            if ( tempInput == "-1")  // If quit
+            string tempInput = Console.ReadLine();
+            // If quit
+            if ( tempInput == "-1")
             {
                 Console.WriteLine("Okay, quit, game end!");
                 return null;
             }
-            else if (tempInput.Length != 4) //If error
+            //If error
+            else if (tempInput.Length != 4)
             {
-
                 Console.WriteLine("Please, retry: ");
                 PlayerInput();
             }
-            else //If all ok
+            //If all ok
+            else
             {
                 var Result = new int[tempInput.Length];
                 for (int i = 0; i < Result.Length; Result[i] =  (int)char.GetNumericValue(tempInput[i]), i++);
@@ -33,51 +36,58 @@ namespace Day2_HW
 
         public static void StartGame()
         {
-            int[] ComputerPuzzle = new int[4]; //Init array
+            int[] computerPuzzle = new int[4]; //Init array
             Random random = new Random(); //Init random
-            for (int i = 0; i < ComputerPuzzle.Length; i++) //Generate unique array
+            for (int i = 0; i < computerPuzzle.Length; i++) //Generate unique array
             {
-                bool MatchesCheck = true; //Checker
-                while (MatchesCheck) //While have matches generate new random number
+                bool matchesCheck = true; //Checker
+                while (matchesCheck) //While have matches generate new random number
                 {
-                    ComputerPuzzle[i] = random.Next(1, 9); 
+                    computerPuzzle[i] = random.Next(1, 9); 
                     var counter = 0; //Count of matches
-                    for (int j = 0; j < ComputerPuzzle.Length; j++) //Check for matches
+                    for (int j = 0; j < computerPuzzle.Length; j++) //Check for matches
                     {
-                        if (ComputerPuzzle[i]==ComputerPuzzle[j])
+                        if (computerPuzzle[i]== computerPuzzle[j])
                         {
                             counter++;
                         }
                     }
-                    MatchesCheck = counter > 1 ? true : false; //If have matches go generate new number
+                    matchesCheck = counter > 1 ? true : false; //If have matches go generate new number
                 }
-                Console.WriteLine(ComputerPuzzle[i]);
+                Console.WriteLine(computerPuzzle[i]);
             }
-            bool WinMarker = false; 
-            while (!WinMarker) //While dont win
+            bool winMarker = false;
+            //While dont win
+            while (!winMarker) 
             {
-                var PlayerSolver = PlayerInput(); //Player Solver
+                //Player Solver
+                var playerSolver = PlayerInput();
                 var Bulls = 0;
                 var Cows = 0;
-                if (PlayerSolver!=null) //If player game
+                //If game dont stoped
+                if (playerSolver != null)
                 {
-                    for (int i = 0; i < ComputerPuzzle.Length; i++) //Proccessing
+                    for (int i = 0; i < computerPuzzle.Length; i++)
                     {
-                        for (int j = 0 ; j < PlayerSolver.Length; j++)
+                        for (int j = 0 ; j < playerSolver.Length; j++)
                         {
-                            if (ComputerPuzzle[i] == PlayerSolver[j] && i == j) Bulls++;
-                            if (ComputerPuzzle[i] == PlayerSolver[j] && i != j) Cows++;
+                            if (computerPuzzle[i] == playerSolver[j] && i == j) 
+                                Bulls++;
+                            if (computerPuzzle[i] == playerSolver[j] && i != j) 
+                                Cows++;
                         }
                     }
                     Console.WriteLine("{0},{1}", Bulls, Cows);
-                    WinMarker = Bulls == 4 ? true : false;
+                    winMarker = Bulls == 4 ? true : false;
                 }
-                else //If player quit (returned null)
+                //If player quit (returned null)
+                else
                 {
                     break;
                 }
             }
-            if (WinMarker) Console.WriteLine("Congratulations, you won!");
+            if (winMarker) 
+                Console.WriteLine("Congratulations, you won!");
         }
     }
 }

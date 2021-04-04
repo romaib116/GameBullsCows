@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PK0ZyksKHTaswiVz9sdP712deBe4/3BiZY2w8csMhyOVnsxtW/EGlrkKrb6w99r+wBItiW3SRjncSdmQEQiGSg==",
+  "dgSpecHash": "qLhmwkTxuOEsvejOMq72GNmDwHSDKxlubdDCxZCu0WCpaZiRB1N/8m0g94dMg7CbpsS7OZvwWkj9DKvHTYd/fw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Roman\\source\\repos\\Day2_HW\\Day2_HW.csproj",
+  "projectFilePath": "C:\\Users\\Roman\\source\\repos\\Day2_HW\\BullsCowsGame.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

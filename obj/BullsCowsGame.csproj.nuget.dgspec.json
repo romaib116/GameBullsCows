@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Roman\\source\\repos\\Day2_HW\\Day2_HW.csproj": {}
+    "C:\\Users\\Roman\\source\\repos\\Day2_HW\\BullsCowsGame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Roman\\source\\repos\\Day2_HW\\Day2_HW.csproj": {
+    "C:\\Users\\Roman\\source\\repos\\Day2_HW\\BullsCowsGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Roman\\source\\repos\\Day2_HW\\Day2_HW.csproj",
-        "projectName": "Day2_HW",
-        "projectPath": "C:\\Users\\Roman\\source\\repos\\Day2_HW\\Day2_HW.csproj",
+        "projectUniqueName": "C:\\Users\\Roman\\source\\repos\\Day2_HW\\BullsCowsGame.csproj",
+        "projectName": "BullsCowsGame",
+        "projectPath": "C:\\Users\\Roman\\source\\repos\\Day2_HW\\BullsCowsGame.csproj",
         "packagesPath": "C:\\Users\\Roman\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Roman\\source\\repos\\Day2_HW\\obj\\",
         "projectStyle": "PackageReference",
